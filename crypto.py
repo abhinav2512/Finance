@@ -33,7 +33,7 @@ from plotly.subplots import make_subplots
 fig = go.Figure()
 fig = make_subplots(rows=1, cols=1)
 fig.append_trace(go.Candlestick(x=df1year.index,open=df1year.Open,high=df1year.High,low=df1year.Low,close=df1year.Close,  ), row=1, col=1)
-fig.update_layout(xaxis_title="Date",yaxis_title="Price",width=1200,height=600,template = "plotly_dark")
+fig.update_layout(xaxis_title="Date",yaxis_title="Price",width=800,height=600,template = "plotly_dark")
 st.plotly_chart(fig)
 
 #Describing Data
